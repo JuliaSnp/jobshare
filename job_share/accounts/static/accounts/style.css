@@ -1,0 +1,13 @@
+body {
+    background-color: beige;
+}
+
+.nav navbar-nav>li>a {
+    position: relative;
+    display: block;
+    padding: 10px 15px;
+    padding-top: 10px;
+    padding-right: 15px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+}

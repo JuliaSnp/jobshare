@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+
+
+    {% block head %}
+    <title>Home</title>
+    {% endblock %}
+
+
+    {% block body %}
+
+
+<h2>Profiles list</h2>
+    <ul>
+    {% for user in users %}
+  <a href="{% url 'accounts:view_profile_with_pk' pk=user.pk %}">
+            <h3>{{user.first_name}} {{user.last_name}}</h3>
+          </a>
+    {% empty %}
+        <li>Sorry, no users in this list.</li>
+    {% endfor %}
+    </ul>
+
+
+
+{% endblock %}

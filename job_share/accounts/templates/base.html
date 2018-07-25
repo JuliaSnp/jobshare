@@ -1,0 +1,97 @@
+
+
+<!DOCTYPE html>
+{% load staticfiles %}
+{% load bootstrap3 %}
+
+<html lang="en" dir="ltr">
+  <head>
+
+
+    <!-- Latest compiled and minified CSS -->
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+
+    <link rel="stylesheet" href="job_share/static/style.css">
+    <style>
+    .nav navbar-nav>li>a {
+        position: relative;
+        display: block;
+        padding: 10px 15px;
+        padding-top: 10px;
+        padding-right: 15px;
+        padding-bottom: 10px;
+        padding-left: 15px;
+    }
+  </style>
+
+    {% block head %}
+    <meta charset="utf-8">
+    <title>Base</title>
+    {% endblock %}
+  </head>
+
+
+  <body>
+    <br>
+
+<div class="container">
+
+    <!-- Static navbar -->
+      <nav class="navbar navbar-default">
+        <div class="container-fluid">
+          <div class="navbar-header">
+
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+
+            <a class="navbar-brand" href="/accounts">Job Share</a>
+
+          </div>
+
+            {% if user.is_authenticated %}
+            <ul class="nav navbar-nav navbar-default">
+              <li><a href="/accounts">Home</a></li>
+              <li><a href="/accounts/profile">Profile</a></li>
+              <li><a href="/accounts/profile/edit">Edit Profile</a></li>
+              <li><a href="/accounts/change-password">Change Password</a></li>
+              <li><a href="/accounts/reset-password">Reset Password</a></li>
+            </ul>
+
+
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="/accounts/logout">Logout</a></li>
+            </ul>
+            {% else %}
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="/accounts/login">Login</a></li>
+              <li><a href="/accounts/register">Register</a></li>
+            </ul>
+            {% endif %}
+
+
+          </div><!--/.nav-collapse -->
+        </div><!--/.container-fluid -->
+      </nav>
+    </div>
+
+
+    {% block body %}
+    <h1>base</h1>
+    {% endblock %}
+
+  </body>
+</html>
