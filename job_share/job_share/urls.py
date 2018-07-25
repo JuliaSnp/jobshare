@@ -22,8 +22,9 @@ from django.conf import settings
 import debug_toolbar
 
 urlpatterns = [
-    url(r'^__debug__/', include(debug_toolbar.urls)), 
+    url(r'^__debug__/', include(debug_toolbar.urls)),
     url(r'^$', views.login_redirect, name = 'login_redirect'),
     path('admin/', admin.site.urls),
-    url(r'^accounts/', include('accounts.urls', ))
+    url(r'^accounts/', include('accounts.urls', )),
+    url(r'^search/', include('search.urls', ))
 ]
