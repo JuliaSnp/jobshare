@@ -1,3 +1,8 @@
+"""
+The messages app is written using this repo https://github.com/arneb/django-messages
+
+"""
+
 from django.http import Http404, HttpResponseRedirect
 from django.shortcuts import render, get_object_or_404
 from django.template import RequestContext
