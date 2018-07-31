@@ -26,5 +26,6 @@ urlpatterns = [
     url(r'^$', views.login_redirect, name = 'login_redirect'),
     path('admin/', admin.site.urls),
     url(r'^accounts/', include('accounts.urls', )),
-    url(r'^search/', include('search.urls', ))
+    url(r'^search/', include('search.urls', )),
+    url(r'^messages/', include('django_messages.urls')),
 ]

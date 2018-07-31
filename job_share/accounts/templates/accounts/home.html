@@ -14,12 +14,14 @@
     <ul>
     {% for user in users %}
   <a href="{% url 'accounts:view_profile_with_pk' pk=user.pk %}">
-            <h3>{{user.first_name}} {{user.last_name}}</h3>
+            <h3>{{user.first_name}} {{user.last_name}} {{ user.userprofile.target_partner }}</h3>
           </a>
     {% empty %}
         <li>Sorry, no users in this list.</li>
     {% endfor %}
     </ul>
+
+
 
 
 
