@@ -21,11 +21,13 @@ from job_share import views
 from django.conf import settings
 import debug_toolbar
 
+
 urlpatterns = [
     url(r'^__debug__/', include(debug_toolbar.urls)),
     url(r'^$', views.login_redirect, name = 'login_redirect'),
     path('admin/', admin.site.urls),
     url(r'^accounts/', include('accounts.urls', )),
     url(r'^search/', include('search.urls', )),
-    url(r'^messages/', include('django_messages.urls')),
+    url(r"^messages/", include("pinax.messages.urls", namespace="pinax_messages")),
+
 ]

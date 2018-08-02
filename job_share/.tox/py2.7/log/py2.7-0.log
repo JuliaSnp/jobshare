@@ -1,0 +1,8 @@
+actionid: py2.7
+msg: getenv
+cmdargs: ['c:\\users\\julia\\appdata\\local\\conda\\conda\\envs\\mydjangoenv\\python.exe', '-m', 'virtualenv', '--python', 'c:\\users\\julia\\appdata\\local\\conda\\conda\\envs\\mydjangoenv\\python.exe', 'py2.7']
+
+Already using interpreter c:\users\julia\appdata\local\conda\conda\envs\mydjangoenv\python.exe
+Using base prefix 'c:\\users\\julia\\appdata\\local\\conda\\conda\\envs\\mydjangoenv'
+New python executable in C:\Users\Julia\Desktop\JobShare\Code\jobshare\job_share\.tox\py2.7\Scripts\python.exe
+Installing setuptools, pip, wheel...done.

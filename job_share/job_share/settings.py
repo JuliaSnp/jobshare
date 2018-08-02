@@ -16,6 +16,7 @@ import os
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 TEMPLATE_DIR = os.path.join(BASE_DIR,'templates')
 
+SITE_ID=1
 
 
 # Quick-start development settings - unsuitable for production
@@ -45,11 +46,13 @@ INSTALLED_APPS = [
     'bootstrap3',
     'accounts',
     'smartmatch',
-    'django_messages',
     'search',
+    'pinax.messages',
+    'pinax.templates',
+
 ]
 
-SITE_ID = 1
+
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -75,6 +78,7 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
+                'pinax.messages.context_processors.user_messages',
             ],
         },
     },
@@ -137,3 +141,7 @@ LOGIN_REDIRECT_URL = '/accounts/'
 
 EMAIL_HOST = 'localhost'
 EMAIL_PORT = 1025
+
+CHAT_WS_SERVER_HOST = 'localhost'
+CHAT_WS_SERVER_PORT = 5002
+CHAT_WS_SERVER_PROTOCOL = 'ws'

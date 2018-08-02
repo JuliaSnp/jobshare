@@ -1,0 +1,5 @@
+actionid: py3.6
+msg: envreport
+cmdargs: ['C:\\Users\\Julia\\Desktop\\JobShare\\Code\\jobshare\\job_share\\.tox\\py3.6\\Scripts\\pip.EXE', 'freeze']
+
+job-share==1.0

@@ -1,0 +1,1 @@
+c:\users\julia\appdata\local\conda\conda\envs\mydjangoenv

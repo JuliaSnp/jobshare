@@ -1,0 +1,107 @@
+actionid: tox
+msg: packaging
+cmdargs: ['c:\\users\\julia\\appdata\\local\\conda\\conda\\envs\\mydjangoenv\\python.exe', local('C:\\Users\\Julia\\Desktop\\JobShare\\Code\\jobshare\\job_share\\setup.py'), 'sdist', '--formats=zip', '--dist-dir', local('C:\\Users\\Julia\\Desktop\\JobShare\\Code\\jobshare\\job_share\\.tox\\dist')]
+
+running sdist
+running egg_info
+writing job_share.egg-info\PKG-INFO
+writing dependency_links to job_share.egg-info\dependency_links.txt
+writing top-level names to job_share.egg-info\top_level.txt
+reading manifest file 'job_share.egg-info\SOURCES.txt'
+writing manifest file 'job_share.egg-info\SOURCES.txt'
+warning: sdist: standard file not found: should have one of README, README.rst, README.txt, README.md
+
+running check
+warning: check: missing required meta-data: url
+
+warning: check: missing meta-data: either (author and author_email) or (maintainer and maintainer_email) must be supplied
+
+creating job_share-1.0
+creating job_share-1.0\accounts
+creating job_share-1.0\accounts\migrations
+creating job_share-1.0\job_share
+creating job_share-1.0\job_share.egg-info
+creating job_share-1.0\search
+creating job_share-1.0\search\migrations
+creating job_share-1.0\smartmatch
+creating job_share-1.0\smartmatch\migrations
+copying files to job_share-1.0...
+copying setup.py -> job_share-1.0
+copying accounts\__init__.py -> job_share-1.0\accounts
+copying accounts\admin.py -> job_share-1.0\accounts
+copying accounts\apps.py -> job_share-1.0\accounts
+copying accounts\forms.py -> job_share-1.0\accounts
+copying accounts\models.py -> job_share-1.0\accounts
+copying accounts\tests.py -> job_share-1.0\accounts
+copying accounts\urls.py -> job_share-1.0\accounts
+copying accounts\views.py -> job_share-1.0\accounts
+copying accounts\migrations\0001_initial.py -> job_share-1.0\accounts\migrations
+copying accounts\migrations\0002_auto_20180721_1609.py -> job_share-1.0\accounts\migrations
+copying accounts\migrations\__init__.py -> job_share-1.0\accounts\migrations
+copying job_share\__init__.py -> job_share-1.0\job_share
+copying job_share\settings.py -> job_share-1.0\job_share
+copying job_share\urls.py -> job_share-1.0\job_share
+copying job_share\views.py -> job_share-1.0\job_share
+copying job_share\wsgi.py -> job_share-1.0\job_share
+copying job_share.egg-info\PKG-INFO -> job_share-1.0\job_share.egg-info
+copying job_share.egg-info\SOURCES.txt -> job_share-1.0\job_share.egg-info
+copying job_share.egg-info\dependency_links.txt -> job_share-1.0\job_share.egg-info
+copying job_share.egg-info\top_level.txt -> job_share-1.0\job_share.egg-info
+copying search\__init__.py -> job_share-1.0\search
+copying search\admin.py -> job_share-1.0\search
+copying search\apps.py -> job_share-1.0\search
+copying search\filters.py -> job_share-1.0\search
+copying search\models.py -> job_share-1.0\search
+copying search\tests.py -> job_share-1.0\search
+copying search\urls.py -> job_share-1.0\search
+copying search\views.py -> job_share-1.0\search
+copying search\migrations\__init__.py -> job_share-1.0\search\migrations
+copying smartmatch\__init__.py -> job_share-1.0\smartmatch
+copying smartmatch\admin.py -> job_share-1.0\smartmatch
+copying smartmatch\apps.py -> job_share-1.0\smartmatch
+copying smartmatch\models.py -> job_share-1.0\smartmatch
+copying smartmatch\tests.py -> job_share-1.0\smartmatch
+copying smartmatch\views.py -> job_share-1.0\smartmatch
+copying smartmatch\migrations\__init__.py -> job_share-1.0\smartmatch\migrations
+Writing job_share-1.0\setup.cfg
+creating 'C:\Users\Julia\Desktop\JobShare\Code\jobshare\job_share\.tox\dist\job_share-1.0.zip' and adding 'job_share-1.0' to it
+adding 'job_share-1.0\PKG-INFO'
+adding 'job_share-1.0\setup.cfg'
+adding 'job_share-1.0\setup.py'
+adding 'job_share-1.0\accounts\admin.py'
+adding 'job_share-1.0\accounts\apps.py'
+adding 'job_share-1.0\accounts\forms.py'
+adding 'job_share-1.0\accounts\models.py'
+adding 'job_share-1.0\accounts\tests.py'
+adding 'job_share-1.0\accounts\urls.py'
+adding 'job_share-1.0\accounts\views.py'
+adding 'job_share-1.0\accounts\__init__.py'
+adding 'job_share-1.0\accounts\migrations\0001_initial.py'
+adding 'job_share-1.0\accounts\migrations\0002_auto_20180721_1609.py'
+adding 'job_share-1.0\accounts\migrations\__init__.py'
+adding 'job_share-1.0\job_share\settings.py'
+adding 'job_share-1.0\job_share\urls.py'
+adding 'job_share-1.0\job_share\views.py'
+adding 'job_share-1.0\job_share\wsgi.py'
+adding 'job_share-1.0\job_share\__init__.py'
+adding 'job_share-1.0\job_share.egg-info\dependency_links.txt'
+adding 'job_share-1.0\job_share.egg-info\PKG-INFO'
+adding 'job_share-1.0\job_share.egg-info\SOURCES.txt'
+adding 'job_share-1.0\job_share.egg-info\top_level.txt'
+adding 'job_share-1.0\search\admin.py'
+adding 'job_share-1.0\search\apps.py'
+adding 'job_share-1.0\search\filters.py'
+adding 'job_share-1.0\search\models.py'
+adding 'job_share-1.0\search\tests.py'
+adding 'job_share-1.0\search\urls.py'
+adding 'job_share-1.0\search\views.py'
+adding 'job_share-1.0\search\__init__.py'
+adding 'job_share-1.0\search\migrations\__init__.py'
+adding 'job_share-1.0\smartmatch\admin.py'
+adding 'job_share-1.0\smartmatch\apps.py'
+adding 'job_share-1.0\smartmatch\models.py'
+adding 'job_share-1.0\smartmatch\tests.py'
+adding 'job_share-1.0\smartmatch\views.py'
+adding 'job_share-1.0\smartmatch\__init__.py'
+adding 'job_share-1.0\smartmatch\migrations\__init__.py'
+removing 'job_share-1.0' (and everything under it)

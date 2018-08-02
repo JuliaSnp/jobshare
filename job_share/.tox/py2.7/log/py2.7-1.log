@@ -1,0 +1,12 @@
+actionid: py2.7
+msg: installpkg
+cmdargs: ['C:\\Users\\Julia\\Desktop\\JobShare\\Code\\jobshare\\job_share\\.tox\\py2.7\\Scripts\\pip.EXE', 'install', 'C:\\Users\\Julia\\Desktop\\JobShare\\Code\\jobshare\\job_share\\.tox\\dist\\job_share-1.0.zip']
+
+Processing c:\users\julia\desktop\jobshare\code\jobshare\job_share\.tox\dist\job_share-1.0.zip
+Building wheels for collected packages: job-share
+  Running setup.py bdist_wheel for job-share: started
+  Running setup.py bdist_wheel for job-share: finished with status 'done'
+  Stored in directory: C:\Users\Julia\AppData\Local\pip\Cache\wheels\fe\15\be\f56bd41484c967402c1618274309bfa5bea19f252597a27da8
+Successfully built job-share
+Installing collected packages: job-share
+Successfully installed job-share-1.0
