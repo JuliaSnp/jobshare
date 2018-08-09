@@ -5,8 +5,7 @@ from django.contrib.auth import get_user_model
 
 # Create your models here.
 
-#users = User.objects.all()
-#User = get_user_model()
+#Solution based on the advice from : https://simpleisbetterthancomplex.com/tutorial/2016/07/22/how-to-extend-django-user-model.html
 
 class UserProfile(models.Model):
     user = models.OneToOneField(User, on_delete=models.CASCADE)

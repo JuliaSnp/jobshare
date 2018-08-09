@@ -20,7 +20,7 @@
         <p>Position: {{ user.userprofile.position}}</p>
         <p>Years of experience: {{ user.userprofile.years_exp}}</p>
 
-        
+
         <a href="{% url "pinax_messages:message_user_create" user_id=user.pk %}" class="btn btn-default">Message this user</a>
 
     </div>

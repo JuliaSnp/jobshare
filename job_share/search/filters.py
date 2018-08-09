@@ -4,11 +4,7 @@ from accounts.models import UserProfile
 
 import django_filters
 
-#class UserFilter(django_filters.FilterSet):
-    #class Meta:
-        #model = User
-        #fields = ['username', 'first_name', 'last_name', ]
-
+#based on the code from https://simpleisbetterthancomplex.com/tutorial/2016/11/28/how-to-filter-querysets-dynamically.html
 
 class ProfileFilter(django_filters.FilterSet):
     skills = django_filters.CharFilter(lookup_expr='icontains')
@@ -16,7 +12,7 @@ class ProfileFilter(django_filters.FilterSet):
     target_partner = django_filters.CharFilter(lookup_expr='icontains')
     industry = django_filters.CharFilter(lookup_expr='icontains')
     position = django_filters.CharFilter(lookup_expr='icontains')
-    
+
     class Meta:
         model = UserProfile
         fields = (

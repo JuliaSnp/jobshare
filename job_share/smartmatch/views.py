@@ -19,12 +19,18 @@ nlp = spacy.load('en_core_web_md')
 #the first in the list is a target_partner of the user performing a search
 #the following ones are personal summaries of users being searched for
 
-doc1 = nlp("good childminder is working")
-doc2 = nlp("Bad childminder resigned")
-doc3 = nlp("Good engineer looking for job")
+#This is who the user is looking for
+doc1 = nlp("Experienced supply chain manager working in retail sector.")
+
+#these are the users available for matching
+doc2 = nlp("A person with experience in freight forwarding and supply chain")
+doc3 = nlp("A person educated to bachelor level and currently employed in Finance or Accounting sector.")
+doc4 = nlp("Accountant, possible graduate who would like to share the existing  job or apply for position jointly")
+doc5 = nlp("A person with a Degree in Architecture or Design to work together on a part time basis.")
+
 
 #creating a list to loop through
-doc_list = [doc1, doc2, doc3]
+doc_list = [doc1, doc2, doc3, doc4, doc5]
 
 for doc in doc_list:
     i=0
@@ -34,14 +40,16 @@ for doc in doc_list:
 
 # The following solutions could have been an alternative
 
-#summaries = UserProfile.objects(pk=userprofile.pk).values_list('pers_summary')
+#summary= UserProfile.objects(pk=userprofile.pk).values_list('pers_summary')
 #target_partners = UserProfile.objects.exclude(id=request.user.id).values_list('target_partner')
 
-#concatenate the 2 and use new list for similarities search
+#merge the 2 and use new list for similarities search
 
-#doc_list = target_partners + summaries
+#doc_dict = summary + target_partners
+
 
 #The problem here is that since .similarity() can only hold 2 arguments at the time
+#In addition summaries and target_partners are producing distionaries, while lists are required
 #Triple nested for loop will need to be used, which will be extremely inefficient
 
 # An optimal solution is working directly with vector representations of the strings using a matrix

@@ -8,6 +8,8 @@ from django.contrib.auth.decorators import login_required
 
 # Create your views here.
 
+# Based on the code from: https://simpleisbetterthancomplex.com/tutorial/2016/11/28/how-to-filter-querysets-dynamically.html
+
 @login_required
 def search(request):
                     #user_list = User.objects.all()
