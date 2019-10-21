@@ -44,7 +44,7 @@ thinc==6.10.3
 toolz==0.9.0
 tqdm==4.24.0
 ujson==1.35
-urllib3==1.23
+urllib3==1.24.2
 virtualenv==16.0.0
 websockets==3.2
 wincertstore==0.2
