@@ -29,7 +29,7 @@ pinax-templates==2.0.1
 plac==0.9.6
 pluggy==0.7.1
 preshed==1.0.1
-py==1.5.4
+py==1.10.0
 pyparsing==2.2.0
 pyreadline==2.1
 python-dateutil==2.7.3
